@@ -1,0 +1,200 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="Up" href="Brian.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Game" rel="Chapter" href="Game.html">
+<link title="Command" rel="Chapter" href="Command.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Main" rel="Chapter" href="Main.html">
+<link title="Author" rel="Chapter" href="Author.html">
+<link title="Brian" rel="Chapter" href="Brian.html">
+<link title="Boardtree" rel="Chapter" href="Boardtree.html"><title>Brian.BrianState</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="Brian.html" title="Brian">Up</a>
+&nbsp;</div>
+<h1>Module <a href="type_Brian.BrianState.html">Brian.BrianState</a></h1>
+
+<pre><span id="MODULEBrianState"><span class="keyword">module</span> BrianState</span>: <code class="code">sig</code> <a href="Brian.BrianState.html">..</a> <code class="code">end</code></pre><hr width="100%">
+
+<pre><span id="TYPEpiece"><span class="keyword">type</span> <code class="type"></code>piece</span> = <code class="type"><a href="Game.ChessPiece.html#TYPEt">Game.ChessPiece.t</a></code> </pre>
+
+
+<pre><span id="TYPEplayer"><span class="keyword">type</span> <code class="type"></code>player</span> = <code class="type"><a href="Game.html#TYPEplayer">Game.player</a></code> </pre>
+
+
+<pre><span id="TYPEboard"><span class="keyword">type</span> <code class="type"></code>board</span> = <code class="type"><a href="Game.ChessBoard.html#TYPEt">Game.ChessBoard.t</a></code> </pre>
+
+
+<pre><code><span id="TYPEt"><span class="keyword">type</span> <code class="type"></code>t</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.color">color</span>&nbsp;: <code class="type"><a href="Brian.BrianState.html#TYPEplayer">player</a></code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.state">state</span>&nbsp;: <code class="type"><a href="State.GameState.html#TYPEt">State.GameState.t</a></code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.moves">moves</span>&nbsp;: <code class="type">(<a href="Command.html#TYPEposition">Command.position</a> * <a href="Command.html#TYPEposition">Command.position</a>) list</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.difficulty">difficulty</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr></table>
+}
+
+
+
+<pre><span id="TYPEpossibility"><span class="keyword">type</span> <code class="type"></code>possibility</span> = <code class="type">(<a href="Game.html#TYPEposition">Game.position</a> * <a href="Game.html#TYPEposition">Game.position</a>) * <a href="Brian.BrianState.html#TYPEt">t</a></code> </pre>
+
+
+<pre><span id="VALsingle_piece"><span class="keyword">val</span> single_piece</span> : <code class="type"><a href="Game.ChessPiece.html#TYPEt">Game.ChessPiece.t</a> -><br>       <a href="State.GameState.html#TYPEt">State.GameState.t</a> -> (<a href="Game.html#TYPEposition">Game.position</a> * <a href="Game.html#TYPEposition">Game.position</a>) list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">single_piece piece st</code> returns the list of <code class="code">position</code> pairs that can be
+      selected and moved with <code class="code">piece</code> in <code class="code">st</code></p>
+</div>
+</div>
+
+<pre><span id="VALmoves_help"><span class="keyword">val</span> moves_help</span> : <code class="type"><a href="State.GameState.html#TYPEt">State.GameState.t</a> -><br>       (<a href="Game.html#TYPEposition">Game.position</a> * <a href="Game.html#TYPEposition">Game.position</a>) list list -><br>       <a href="Game.ChessPiece.html#TYPEt">Game.ChessPiece.t</a> list -> (<a href="Game.html#TYPEposition">Game.position</a> * <a href="Game.html#TYPEposition">Game.position</a>) list list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">moves_help st accu pieces</code> folds the list of pieces using <code class="code">single_piece</code>
+      as a helper</p>
+</div>
+</div>
+
+<pre><span id="VALmoves"><span class="keyword">val</span> moves</span> : <code class="type"><a href="Brian.BrianState.html#TYPEplayer">player</a> -><br>       <a href="State.GameState.html#TYPEt">State.GameState.t</a> -> (<a href="Game.html#TYPEposition">Game.position</a> * <a href="Game.html#TYPEposition">Game.position</a>) list</code></pre>
+<pre><span id="VALupdate"><span class="keyword">val</span> update</span> : <code class="type"><a href="Brian.BrianState.html#TYPEt">t</a> -> <a href="Brian.BrianState.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">update br</code> updates the list of valid moves based on the state in brian</p>
+</div>
+</div>
+
+<pre><span id="VALmove_help"><span class="keyword">val</span> move_help</span> : <code class="type"><a href="State.GameState.html#TYPEt">State.GameState.t</a> -> <a href="Game.html#TYPEposition">Game.position</a> * <a href="Game.html#TYPEposition">Game.position</a> -> <a href="State.GameState.html#TYPEt">State.GameState.t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Wrapper for GameState.move</p>
+</div>
+</div>
+
+<pre><span id="VALget_state"><span class="keyword">val</span> get_state</span> : <code class="type"><a href="Brian.BrianState.html#TYPEt">t</a> -> <a href="State.GameState.html#TYPEt">State.GameState.t</a></code></pre>
+<pre><span id="VALmove"><span class="keyword">val</span> move</span> : <code class="type"><a href="Brian.BrianState.html#TYPEt">t</a> -> <a href="Game.html#TYPEposition">Game.position</a> * <a href="Game.html#TYPEposition">Game.position</a> -> <a href="Brian.BrianState.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>Returns a new object of type br with new state after moving with
+      respect to <code class="code">pair</code></p>
+</div>
+</div>
+
+<pre><span id="VALinit_state_black"><span class="keyword">val</span> init_state_black</span> : <code class="type"><a href="Brian.BrianState.html#TYPEt">t</a></code></pre>
+<pre><span id="VALinit_state_white"><span class="keyword">val</span> init_state_white</span> : <code class="type"><a href="Brian.BrianState.html#TYPEt">t</a></code></pre>
+<pre><span id="VALpos_to_rankfile"><span class="keyword">val</span> pos_to_rankfile</span> : <code class="type">(int * int) list -> string list -> string list</code></pre><div class="info ">
+<div class="info-desc">
+<p>Returns a string visualisation of teh positions in <code class="code">lst</code></p>
+</div>
+</div>
+
+<pre><span id="VALprint_list"><span class="keyword">val</span> print_list</span> : <code class="type">string list -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">print_list</code> prints the list inputted to it</p>
+</div>
+</div>
+
+<pre><span id="VALconstructor"><span class="keyword">val</span> constructor</span> : <code class="type"><a href="Game.html#TYPEplayer">Game.player</a> -> <a href="Brian.BrianState.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">constructor color</code> returns a state of Brian initialized to <code class="code">color</code></p>
+</div>
+</div>
+
+<pre><span id="VALadjust"><span class="keyword">val</span> adjust</span> : <code class="type">int -> <a href="Brian.BrianState.html#TYPEt">t</a> -> <a href="Brian.BrianState.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">adjust difficulty br</code> sets the difficulty value in <code class="code">br</code> to <code class="code">difficulty</code></p>
+</div>
+</div>
+
+<pre><span id="VALscore"><span class="keyword">val</span> score</span> : <code class="type"><a href="Brian.BrianState.html#TYPEpiece">piece</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">score item</code> returns the score value of <code class="code">item</code></p>
+</div>
+</div>
+
+<pre><span id="VALcompare_help"><span class="keyword">val</span> compare_help</span> : <code class="type"><a href="Brian.BrianState.html#TYPEpossibility">possibility</a> -> <a href="Brian.BrianState.html#TYPEpossibility">possibility</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">compare_help obj obj'</code> compares the GameStates hidden in <code class="code">obj</code> and <code class="code">obj'</code>
+      with <code class="code">GameState.compare</code></p>
+</div>
+</div>
+
+<pre><span id="VALinit_new"><span class="keyword">val</span> init_new</span> : <code class="type"><a href="State.GameState.html#TYPEt">State.GameState.t</a> -> <a href="Brian.BrianState.html#TYPEt">t</a> -> <a href="Brian.BrianState.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">init_new st br</code> initializes a new state of brian with the color, moves,
+      and difficulty of <code class="code">br</code> but with the gamestate of <code class="code">st</code></p>
+</div>
+</div>
+
+<pre><span id="VALrand_move"><span class="keyword">val</span> rand_move</span> : <code class="type"><a href="Brian.BrianState.html#TYPEt">t</a> -> <a href="Command.html#TYPEposition">Command.position</a> * <a href="Command.html#TYPEposition">Command.position</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">pick_move moves</code> picks a random element from <code class="code">moves</code></p>
+</div>
+</div>
+
+<pre><span id="VALcapture"><span class="keyword">val</span> capture</span> : <code class="type"><a href="Brian.BrianState.html#TYPEt">t</a> -> <a href="Boardtree.Findmove.html#TYPEmove">Boardtree.Findmove.move</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">capture br</code> returns the move that Brian can make that maximizes
+      the board's minimax value</p>
+</div>
+</div>
+
+<pre><span id="VALpick_move"><span class="keyword">val</span> pick_move</span> : <code class="type"><a href="Brian.BrianState.html#TYPEt">t</a> -> <a href="Boardtree.Findmove.html#TYPEmove">Boardtree.Findmove.move</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">pick_move br</code> calls a helper function to return a position based on
+      <code class="code">br</code>'s difficulty value</p>
+</div>
+</div>
+
+<pre><span id="VALrun_help"><span class="keyword">val</span> run_help</span> : <code class="type"><a href="State.GameState.html#TYPEplayer">State.GameState.player</a> -> <a href="Brian.BrianState.html#TYPEt">t</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">run_help color br</code> makes Brian's move if it's his turn else it prompts
+      the human player to select a piece for moving</p>
+</div>
+</div>
+
+<pre><span id="VALselect_run_help"><span class="keyword">val</span> select_run_help</span> : <code class="type"><a href="State.GameState.html#TYPEplayer">State.GameState.player</a> -> <a href="Brian.BrianState.html#TYPEt">t</a> -> <a href="Command.html#TYPEposition">Command.position</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">select_run_help color br pos</code> prompt the player to select a position for
+      moving after the player has selected <code class="code">pos</code></p>
+</div>
+</div>
+
+<pre><span id="VALbad_time"><span class="keyword">val</span> bad_time</span> : <code class="type">unit -> 'a</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">bad_time</code> prints a string and then exits the game</p>
+</div>
+</div>
+
+<pre><span id="VALrun"><span class="keyword">val</span> run</span> : <code class="type"><a href="Brian.BrianState.html#TYPEplayer">player</a> -> int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">run color</code> runs Brian as player <code class="code">color</code></p>
+</div>
+</div>
+</body></html>

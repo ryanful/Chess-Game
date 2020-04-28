@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="Up" href="State.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Game" rel="Chapter" href="Game.html">
+<link title="Command" rel="Chapter" href="Command.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Main" rel="Chapter" href="Main.html">
+<link title="Author" rel="Chapter" href="Author.html">
+<link title="Brian" rel="Chapter" href="Brian.html">
+<link title="Boardtree" rel="Chapter" href="Boardtree.html"><title>State.GameState</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="State.html" title="State">Up</a>
+&nbsp;</div>
+<h1>Module <a href="type_State.GameState.html">State.GameState</a></h1>
+
+<pre><span id="MODULEGameState"><span class="keyword">module</span> GameState</span>: <code class="code">sig</code> <a href="State.GameState.html">..</a> <code class="code">end</code></pre><hr width="100%">
+
+<pre><span id="TYPEpiece"><span class="keyword">type</span> <code class="type"></code>piece</span> = <code class="type"><a href="Game.ChessPiece.html#TYPEt">Game.ChessPiece.t</a></code> </pre>
+
+
+<pre><span id="TYPEplayer"><span class="keyword">type</span> <code class="type"></code>player</span> = <code class="type"><a href="Game.html#TYPEplayer">Game.player</a></code> </pre>
+
+
+<pre><span id="TYPEboard"><span class="keyword">type</span> <code class="type"></code>board</span> = <code class="type"><a href="Game.ChessBoard.html#TYPEt">Game.ChessBoard.t</a></code> </pre>
+
+
+<pre><code><span id="TYPEt"><span class="keyword">type</span> <code class="type"></code>t</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.current_turn">current_turn</span>&nbsp;: <code class="type"><a href="State.GameState.html#TYPEplayer">player</a></code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.board_state">board_state</span>&nbsp;: <code class="type"><a href="State.GameState.html#TYPEboard">board</a></code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.white_captured">white_captured</span>&nbsp;: <code class="type"><a href="State.GameState.html#TYPEpiece">piece</a> list</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTt.black_captured">black_captured</span>&nbsp;: <code class="type"><a href="State.GameState.html#TYPEpiece">piece</a> list</code>;</code></td>
+
+</tr></table>
+}
+
+
+
+<pre><span id="VALinit_state"><span class="keyword">val</span> init_state</span> : <code class="type"><a href="State.GameState.html#TYPEt">t</a></code></pre>
+<pre><span id="VALstate_from_board"><span class="keyword">val</span> state_from_board</span> : <code class="type"><a href="State.GameState.html#TYPEt">t</a> -> <a href="State.GameState.html#TYPEboard">board</a> -> <a href="State.GameState.html#TYPEt">t</a></code></pre>
+<pre><span id="VALstate_copy"><span class="keyword">val</span> state_copy</span> : <code class="type"><a href="State.GameState.html#TYPEt">t</a> -> <a href="State.GameState.html#TYPEt">t</a></code></pre>
+<pre><span id="VALpiece_info"><span class="keyword">val</span> piece_info</span> : <code class="type"><a href="State.GameState.html#TYPEpiece">piece</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">piece_info piece</code> returns the string representation of <code class="code">piece</code></p>
+</div>
+</div>
+
+<pre><span id="VALsquare_to_string"><span class="keyword">val</span> square_to_string</span> : <code class="type"><a href="Game.ChessSquare.html#TYPEt">Game.ChessSquare.t</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">square_to_string</code> returns the string representation of <code class="code">square</code></p>
+</div>
+</div>
+
+<pre><span id="VALrank_to_string"><span class="keyword">val</span> rank_to_string</span> : <code class="type"><a href="Game.ChessSquare.html#TYPEt">Game.ChessSquare.t</a> array -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">rank_to_string rank</code> returns the string representation of <code class="code">rank</code></p>
+</div>
+</div>
+
+<pre><span id="VALrank_to_list"><span class="keyword">val</span> rank_to_list</span> : <code class="type"><a href="Game.ChessSquare.html#TYPEt">Game.ChessSquare.t</a> array -> <a href="Game.ChessSquare.html#TYPEt">Game.ChessSquare.t</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">rank_to_list rank</code> folds <code class="code">rank</code> from an array into a list</p>
+</div>
+</div>
+
+<pre><span id="VALboard_to_list"><span class="keyword">val</span> board_to_list</span> : <code class="type"><a href="State.GameState.html#TYPEboard">board</a> -> <a href="Game.ChessSquare.html#TYPEt">Game.ChessSquare.t</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">board_to_list</code> creates a two-dimensional list constructed by appending
+      the folded ranks</p>
+</div>
+</div>
+
+<pre><span id="VALvisualize"><span class="keyword">val</span> visualize</span> : <code class="type"><a href="State.GameState.html#TYPEt">t</a> -> string</code></pre>
+<pre><span id="VALcaptured"><span class="keyword">val</span> captured</span> : <code class="type"><a href="State.GameState.html#TYPEt">t</a> -> <a href="Game.html#TYPEplayer">Game.player</a> -> <a href="State.GameState.html#TYPEpiece">piece</a> list</code></pre>
+<pre><span id="VALscore_from_piece"><span class="keyword">val</span> score_from_piece</span> : <code class="type"><a href="State.GameState.html#TYPEpiece">piece</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">score_from_piece item</code> returns the corresponding score value based on
+      which piece <code class="code">item</code> is</p>
+</div>
+</div>
+
+<pre><span id="VALscore_helper"><span class="keyword">val</span> score_helper</span> : <code class="type">int -> <a href="State.GameState.html#TYPEpiece">piece</a> list -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">score_helper acc</code> returns the sum of the scores of the pieces passed in
+      added to <code class="code">acc</code></p>
+</div>
+</div>
+
+<pre><span id="VALall_pieces"><span class="keyword">val</span> all_pieces</span> : <code class="type"><a href="Game.ChessPiece.html#TYPEt">Game.ChessPiece.t</a> list -> <a href="Game.ChessSquare.html#TYPEt">Game.ChessSquare.t</a> list -> <a href="Game.ChessPiece.html#TYPEt">Game.ChessPiece.t</a> list</code></pre>
+<pre><span id="VALremaining_help"><span class="keyword">val</span> remaining_help</span> : <code class="type"><a href="Game.ChessPiece.html#TYPEt">Game.ChessPiece.t</a> list -><br>       <a href="Game.html#TYPEplayer">Game.player</a> -> <a href="Game.ChessPiece.html#TYPEt">Game.ChessPiece.t</a> list -> <a href="Game.ChessPiece.html#TYPEt">Game.ChessPiece.t</a> list</code></pre>
+<pre><span id="VALremaining"><span class="keyword">val</span> remaining</span> : <code class="type"><a href="State.GameState.html#TYPEt">t</a> -> <a href="Game.html#TYPEplayer">Game.player</a> -> <a href="Game.ChessPiece.html#TYPEt">Game.ChessPiece.t</a> list</code></pre>
+<pre><span id="VALscore"><span class="keyword">val</span> score</span> : <code class="type"><a href="State.GameState.html#TYPEt">t</a> -> <a href="Game.html#TYPEplayer">Game.player</a> -> int</code></pre>
+<pre><span id="VALcurr_turn"><span class="keyword">val</span> curr_turn</span> : <code class="type"><a href="State.GameState.html#TYPEt">t</a> -> <a href="State.GameState.html#TYPEplayer">player</a></code></pre>
+<pre><span id="VALcurr_board"><span class="keyword">val</span> curr_board</span> : <code class="type"><a href="State.GameState.html#TYPEt">t</a> -> <a href="State.GameState.html#TYPEboard">board</a></code></pre>
+<pre><span id="VALchange_turn"><span class="keyword">val</span> change_turn</span> : <code class="type"><a href="State.GameState.html#TYPEt">t</a> -> <a href="State.GameState.html#TYPEt">t</a></code></pre>
+<pre><span id="VALcheck_win"><span class="keyword">val</span> check_win</span> : <code class="type"><a href="State.GameState.html#TYPEt">t</a> -> <a href="Game.html#TYPEplayer">Game.player</a> -> bool</code></pre>
+<pre><span id="VALcapture_piece"><span class="keyword">val</span> capture_piece</span> : <code class="type"><a href="State.GameState.html#TYPEt">t</a> -><br>       <a href="State.GameState.html#TYPEplayer">player</a> -><br>       <a href="State.GameState.html#TYPEpiece">piece</a> option -> <a href="State.GameState.html#TYPEpiece">piece</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">capture_piece st player piece</code> is <code class="code">captured st player</code> if it is player
+      <code class="code">player</code>'s turn or piece <code class="code">piece</code> is None. Otherwise it is
+      <code class="code">captured st player</code> with the piece associated with <code class="code">piece</code> added to it.</p>
+</div>
+</div>
+
+<pre><span id="VALcapture_help"><span class="keyword">val</span> capture_help</span> : <code class="type"><a href="State.GameState.html#TYPEt">t</a> -> <a href="Game.html#TYPEplayer">Game.player</a> -> <a href="State.GameState.html#TYPEpiece">piece</a> list</code></pre>
+<pre><span id="VALmove"><span class="keyword">val</span> move</span> : <code class="type"><a href="State.GameState.html#TYPEt">t</a> -> <a href="Game.html#TYPEposition">Game.position</a> -> <a href="Game.html#TYPEposition">Game.position</a> -> <a href="State.GameState.html#TYPEt">t</a></code></pre>
+<pre><span id="VALmove_options"><span class="keyword">val</span> move_options</span> : <code class="type"><a href="State.GameState.html#TYPEt">t</a> -> <a href="Game.html#TYPEposition">Game.position</a> -> <a href="Game.html#TYPEposition">Game.position</a> list</code></pre>
+<pre><span id="VALis_players_piece"><span class="keyword">val</span> is_players_piece</span> : <code class="type"><a href="State.GameState.html#TYPEt">t</a> -> <a href="Game.html#TYPEposition">Game.position</a> -> bool</code></pre>
+<pre><span id="VALminimax"><span class="keyword">val</span> minimax</span> : <code class="type"><a href="State.GameState.html#TYPEt">t</a> -> int</code></pre>
+<pre><span id="VALcompare"><span class="keyword">val</span> compare</span> : <code class="type"><a href="State.GameState.html#TYPEt">t</a> -> <a href="State.GameState.html#TYPEt">t</a> -> int</code></pre></body></html>

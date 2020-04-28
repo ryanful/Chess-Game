@@ -1,0 +1,6 @@
+#require "oUnit";;
+#require "ANSITerminal";;
+#directory "_build";;
+#load "game.cmo";;
+#load "command.cmo";;
+#load "state.cmo";;

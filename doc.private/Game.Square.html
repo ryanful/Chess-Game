@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Game.Piece.html">
+<link rel="next" href="Game.Board.html">
+<link rel="Up" href="Game.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Game" rel="Chapter" href="Game.html">
+<link title="Command" rel="Chapter" href="Command.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Main" rel="Chapter" href="Main.html">
+<link title="Author" rel="Chapter" href="Author.html">
+<link title="Brian" rel="Chapter" href="Brian.html">
+<link title="Boardtree" rel="Chapter" href="Boardtree.html"><title>Game.Square</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Game.Piece.html" title="Game.Piece">Previous</a>
+&nbsp;<a class="up" href="Game.html" title="Game">Up</a>
+&nbsp;<a class="post" href="Game.Board.html" title="Game.Board">Next</a>
+</div>
+<h1>Module type <a href="type_Game.Square.html">Game.Square</a></h1>
+
+<pre><span id="MODULETYPESquare"><span class="keyword">module type</span> Square</span> = <code class="code">sig</code> <a href="Game.Square.html">..</a> <code class="code">end</code></pre><hr width="100%">
+
+<pre><span id="TYPEt"><span class="keyword">type</span> <code class="type"></code>t</span> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>The abstract type of a square on a Chess Board.</p>
+</div>
+</div>
+
+
+<pre><span id="VALbuild"><span class="keyword">val</span> build</span> : <code class="type"><a href="Game.html#TYPEposition">Game.position</a> -> ChessPiece.t option -> int -> int -> <a href="Game.Square.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">build pos piece_opt w_thr b_thr</code> creates a new square with position 
+      <code class="code">pos</code>, item <code class="code">piece_opt</code>, and is threatened by int <code class="code">w_thr</code> white pieces and 
+      int <code class="code">b_thr</code> black pieces.</p>
+</div>
+</div>
+
+<pre><span id="VALbuild_with_piece"><span class="keyword">val</span> build_with_piece</span> : <code class="type"><a href="Game.html#TYPEposition">Game.position</a> -> <a href="Game.html#TYPEname">Game.name</a> -> <a href="Game.html#TYPEplayer">Game.player</a> -> int -> int -> <a href="Game.Square.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">build_with_piece pos name player w_thr b_thr</code> creates a new square with 
+      position <code class="code">pos</code>, piece with the same position, name <code class="code">name</code>, and player 
+      <code class="code">player</code>, and is threatened by int <code class="code">w_thr</code> white pieces and int <code class="code">b_thr</code> 
+      black pieces.</p>
+</div>
+</div>
+
+<pre><span id="VALget_position"><span class="keyword">val</span> get_position</span> : <code class="type"><a href="Game.Square.html#TYPEt">t</a> -> <a href="Game.html#TYPEposition">Game.position</a></code></pre><div class="info ">
+<div class="info-desc">
+<p>the coordinates of the square <code class="code">t</code> on the chessboard</p>
+</div>
+</div>
+
+<pre><span id="VALget_piece"><span class="keyword">val</span> get_piece</span> : <code class="type"><a href="Game.Square.html#TYPEt">t</a> -> ChessPiece.t option</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_piece</code> returns the chess piece that is on the square, 
+     and None of the square is empty</p>
+</div>
+</div>
+
+<pre><span id="VALget_wthreat"><span class="keyword">val</span> get_wthreat</span> : <code class="type"><a href="Game.Square.html#TYPEt">t</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_wthreat</code> is the amount of white pieces on the board that can 
+      legally move to this square</p>
+</div>
+</div>
+
+<pre><span id="VALget_bthreat"><span class="keyword">val</span> get_bthreat</span> : <code class="type"><a href="Game.Square.html#TYPEt">t</a> -> int</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_bthreat</code> is the amount of white pieces on the board that can 
+     legally move to this square</p>
+</div>
+</div>
+
+<pre><span id="VALremove_piece"><span class="keyword">val</span> remove_piece</span> : <code class="type"><a href="Game.Square.html#TYPEt">t</a> -> <a href="Game.Square.html#TYPEt">t</a></code></pre><div class="info ">
+</div>
+
+<pre><span id="VALchange_position"><span class="keyword">val</span> change_position</span> : <code class="type"><a href="Game.Square.html#TYPEt">t</a> -> <a href="Game.html#TYPEposition">Game.position</a> -> <a href="Game.Square.html#TYPEt">t</a></code></pre><div class="info ">
+</div>
+</body></html>

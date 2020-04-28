@@ -1,0 +1,39 @@
+<html><head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Game" rel="Chapter" href="Game.html">
+<link title="Command" rel="Chapter" href="Command.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Main" rel="Chapter" href="Main.html">
+<link title="Author" rel="Chapter" href="Author.html">
+<link title="Brian" rel="Chapter" href="Brian.html">
+<link title="Boardtree" rel="Chapter" href="Boardtree.html"><title>Game.ChessSquare</title>
+</head>
+<body>
+<code class="code"><span class="keyword">sig</span><br>
+&nbsp;&nbsp;<span class="keyword">type</span>&nbsp;t&nbsp;=&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pos&nbsp;:&nbsp;<span class="constructor">Game</span>.position;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;item&nbsp;:&nbsp;<span class="constructor">ChessPiece</span>.t&nbsp;option;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;w_threatened&nbsp;:&nbsp;int;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;b_threatened&nbsp;:&nbsp;int;<br>
+&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;build&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="constructor">Game</span>.position&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">ChessPiece</span>.t&nbsp;option&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Game</span>.<span class="constructor">ChessSquare</span>.t<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;build_with_piece&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="constructor">Game</span>.position&nbsp;<span class="keywordsign">-&gt;</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="constructor">Game</span>.name&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Game</span>.player&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Game</span>.<span class="constructor">ChessSquare</span>.t<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;get_position&nbsp;:&nbsp;<span class="constructor">Game</span>.<span class="constructor">ChessSquare</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Game</span>.position<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;get_piece&nbsp;:&nbsp;<span class="constructor">Game</span>.<span class="constructor">ChessSquare</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">ChessPiece</span>.t&nbsp;option<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;get_wthreat&nbsp;:&nbsp;<span class="constructor">Game</span>.<span class="constructor">ChessSquare</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;get_bthreat&nbsp;:&nbsp;<span class="constructor">Game</span>.<span class="constructor">ChessSquare</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;int<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;remove_piece&nbsp;:&nbsp;<span class="constructor">Game</span>.<span class="constructor">ChessSquare</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Game</span>.<span class="constructor">ChessSquare</span>.t<br>
+&nbsp;&nbsp;<span class="keyword">val</span>&nbsp;change_position&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="constructor">Game</span>.<span class="constructor">ChessSquare</span>.t&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Game</span>.position&nbsp;<span class="keywordsign">-&gt;</span>&nbsp;<span class="constructor">Game</span>.<span class="constructor">ChessSquare</span>.t<br>
+<span class="keyword">end</span></code></body></html>

@@ -1,0 +1,111 @@
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:1:Getting Square D2 on init.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:1:Getting Square D2 on init is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:1:Getting Square D2 on init.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:2:Get None for valid knight move on init.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:2:Get None for valid knight move on init is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:2:Get None for valid knight move on init.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:3:Get None for valid knight move on init.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:3:Get None for valid knight move on init is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:3:Get None for valid knight move on init.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:4:Get initial pawn at D2.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:4:Get initial pawn at D2 is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:4:Get initial pawn at D2.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:5:Get piece at B3.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:5:Get piece at B3 is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:5:Get piece at B3.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:6:Get b2 after pawn move to b3.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:6:Get b2 after pawn move to b3 is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:6:Get b2 after pawn move to b3.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:7:Get b3 after pawn move from b2.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:7:Get b3 after pawn move from b2 is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:7:Get b3 after pawn move from b2.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:8:piece after wp from b2 to b3.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:8:piece after wp from b2 to b3 is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:8:piece after wp from b2 to b3.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:9:Valid moves: left wK on init.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:9:Valid moves: left wK on init is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:9:Valid moves: left wK on init.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:10:valid moves: leftmost pawn on init.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:10:valid moves: leftmost pawn on init is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:10:valid moves: leftmost pawn on init.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:11:Move: wP from b2 to b3.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:11:Move: wP from b2 to b3 is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:11:Move: wP from b2 to b3.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:12:Move: white knight from b1 to a3.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:12:Move: white knight from b1 to a3 is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:12:Move: white knight from b1 to a3.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:13:white king enemies on init.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:13:white king enemies on init is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:13:white king enemies on init.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:14:white black enemies on init.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:14:white black enemies on init is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:14:white black enemies on init.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:15:nearby -- white king no nearby knight.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:15:nearby -- white king no nearby knight is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:15:nearby -- white king no nearby knight.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:16:nearby  -- white king in check by knight.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:16:nearby  -- white king in check by knight is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:16:nearby  -- white king in check by knight.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:17:white king no nearby knight.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:17:white king no nearby knight is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:17:white king no nearby knight.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:18:white king in check by knight.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:18:white king in check by knight is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:18:white king in check by knight.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:19:ParseTest: select.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:19:ParseTest: select is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:19:ParseTest: select.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:20:ParseTest: select.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:20:ParseTest: select is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:20:ParseTest: select.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:23:ParseTest: unselect with position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:23:ParseTest: unselect with position is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:23:ParseTest: unselect with position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:25:ParseTest: unselect no position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:25:ParseTest: unselect no position is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:25:ParseTest: unselect no position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:27:ParseTest: move with caps.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:27:ParseTest: move with caps is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:27:ParseTest: move with caps.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:28:ParseTest: move with position whitespace.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:28:ParseTest: move with position whitespace is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:28:ParseTest: move with position whitespace.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:30:ParseTest: move with position and extra.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:30:ParseTest: move with position and extra is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:30:ParseTest: move with position and extra.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:31:ParseTest: score with no position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:31:ParseTest: score with no position is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:31:ParseTest: score with no position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:32:ParseTest: valid score with whitespace.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:32:ParseTest: valid score with whitespace is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:32:ParseTest: valid score with whitespace.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:33:ParseTest: score with position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:33:ParseTest: score with position is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:33:ParseTest: score with position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:34:ParseTest: draw with no position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:34:ParseTest: draw with no position is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:34:ParseTest: draw with no position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:35:ParseTest: valid draw with whitespace.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:35:ParseTest: valid draw with whitespace is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:35:ParseTest: valid draw with whitespace.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:36:ParseTest: draw with position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:36:ParseTest: draw with position is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:36:ParseTest: draw with position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:37:ParseTest: quit with no position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:37:ParseTest: quit with no position is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:37:ParseTest: quit with no position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:38:ParseTest: valid quit with whitespace.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:38:ParseTest: valid quit with whitespace is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:38:ParseTest: valid quit with whitespace.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:39:ParseTest: quit with position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:39:ParseTest: quit with position is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:39:ParseTest: quit with position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:40:ParseTest: empty case.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:40:ParseTest: empty case is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:40:ParseTest: empty case.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:42:ParseTest: empty case.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:42:ParseTest: empty case is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:42:ParseTest: empty case.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Start test test suite for Chess Game:43:ParseTest: empty case 2.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: Test test suite for Chess Game:43:ParseTest: empty case 2 is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#02 I: End test test suite for Chess Game:43:ParseTest: empty case 2.

@@ -1,0 +1,48 @@
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Start test test suite for Chess Game:0:pieces of init board white.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 E: Test test suite for Chess Game:0:pieces of init board white has failed.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 E: expected: [(1, 1); (2, 1); (3, 1); (4, 1); (5, 1); (6, 1); (7, 1); (8, 1); (1, 2); (2, 2); (3, 2); (4, 2); (5, 2); (6, 2); (7, 2); (8, 2)]
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 E: but got: [(8, 2); (8, 1); (7, 2); (7, 1); (6, 2); (6, 1); (5, 2); (5, 1); (4, 2); (4, 1); (3, 2); (3, 1); (2, 2); (1, 3); (1, 2); (1, 1)] in test test suite for Chess Game:0:pieces of init board white.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 E: Raised at file "src/oUnitAssert.ml", line 45, characters 8-27
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 E: 
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: End test test suite for Chess Game:0:pieces of init board white.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Start test test suite for Chess Game:21:ParseTest: valid select with whitespace.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Test test suite for Chess Game:21:ParseTest: valid select with whitespace is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: End test test suite for Chess Game:21:ParseTest: valid select with whitespace.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Start test test suite for Chess Game:22:ParseTest: Select with empty position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Test test suite for Chess Game:22:ParseTest: Select with empty position is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: End test test suite for Chess Game:22:ParseTest: Select with empty position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Start test test suite for Chess Game:24:ParseTest: unselect with whitespace.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Test test suite for Chess Game:24:ParseTest: unselect with whitespace is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: End test test suite for Chess Game:24:ParseTest: unselect with whitespace.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Start test test suite for Chess Game:26:ParseTest: move with no position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Test test suite for Chess Game:26:ParseTest: move with no position is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: End test test suite for Chess Game:26:ParseTest: move with no position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Start test test suite for Chess Game:29:ParseTest: move with position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Test test suite for Chess Game:29:ParseTest: move with position is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: End test test suite for Chess Game:29:ParseTest: move with position.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Start test test suite for Chess Game:41:ParseTest: empty case.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Test test suite for Chess Game:41:ParseTest: empty case is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: End test test suite for Chess Game:41:ParseTest: empty case.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Start test test suite for Chess Game:44:ParseTest: random.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Test test suite for Chess Game:44:ParseTest: random is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: End test test suite for Chess Game:44:ParseTest: random.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Start test test suite for Chess Game:45:Testing initial board for White.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Test test suite for Chess Game:45:Testing initial board for White is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: End test test suite for Chess Game:45:Testing initial board for White.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Start test test suite for Chess Game:46:Testing initial board for Black.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Test test suite for Chess Game:46:Testing initial board for Black is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: End test test suite for Chess Game:46:Testing initial board for Black.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Start test test suite for Chess Game:47:Somestate before capture.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Test test suite for Chess Game:47:Somestate before capture is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: End test test suite for Chess Game:47:Somestate before capture.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Start test test suite for Chess Game:48:Somestate after capture.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 E: Test test suite for Chess Game:48:Somestate after capture has failed.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 E: expected: [Black Pawn is at (1, 3)] but got: [] in test test suite for Chess Game:48:Somestate after capture.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 E: Raised at file "src/oUnitAssert.ml", line 45, characters 8-27
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 E: 
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: End test test suite for Chess Game:48:Somestate after capture.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Start test test suite for Chess Game:49:Testing copy.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: Test test suite for Chess Game:49:Testing copy is successful.
+2019-12-11T04:57:31+00:00 dhcp-gs-632.eduroam.cornell.edu#01 I: End test test suite for Chess Game:49:Testing copy.

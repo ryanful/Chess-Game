@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="Up" href="Brian.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Game" rel="Chapter" href="Game.html">
+<link title="Command" rel="Chapter" href="Command.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Main" rel="Chapter" href="Main.html">
+<link title="Author" rel="Chapter" href="Author.html">
+<link title="Brian" rel="Chapter" href="Brian.html">
+<link title="Boardtree" rel="Chapter" href="Boardtree.html"><title>Brian.BrianState</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="Brian.html" title="Brian">Up</a>
+&nbsp;</div>
+<h1>Module <a href="type_Brian.BrianState.html">Brian.BrianState</a></h1>
+
+<pre><span id="MODULEBrianState"><span class="keyword">module</span> BrianState</span>: <code class="type"><a href="Brian.Brian.html">Brian</a></code><code class="type"> </code></pre><hr width="100%">
+
+<pre><span id="TYPEpiece"><span class="keyword">type</span> <code class="type"></code>piece</span> = <code class="type">Game.ChessPiece.t</code> </pre>
+
+
+<pre><span id="TYPEplayer"><span class="keyword">type</span> <code class="type"></code>player</span> = <code class="type"><a href="Game.html#TYPEplayer">Game.player</a></code> </pre>
+
+
+<pre><span id="TYPEboard"><span class="keyword">type</span> <code class="type"></code>board</span> = <code class="type">Game.ChessBoard.t</code> </pre>
+
+
+<pre><span id="TYPEt"><span class="keyword">type</span> <code class="type"></code>t</span> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>Abstract type representing the Brian state</p>
+</div>
+</div>
+
+
+<pre><span id="TYPEpossibility"><span class="keyword">type</span> <code class="type"></code>possibility</span> = <code class="type">(<a href="Game.html#TYPEposition">Game.position</a> * <a href="Game.html#TYPEposition">Game.position</a>) * <a href="Brian.Brian.html#TYPEt">t</a></code> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>Type that represents a possible board state and the move that Brian would
+      have to make to reach that board state</p>
+</div>
+</div>
+
+
+<pre><span id="VALinit_state_black"><span class="keyword">val</span> init_state_black</span> : <code class="type"><a href="Brian.Brian.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">init_state_black</code> is the initial state of Brian as the black player</p>
+</div>
+</div>
+
+<pre><span id="VALinit_state_white"><span class="keyword">val</span> init_state_white</span> : <code class="type"><a href="Brian.Brian.html#TYPEt">t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">init_state_white</code> is the initial state of Brian as the white player</p>
+</div>
+</div>
+
+<pre><span id="VALget_state"><span class="keyword">val</span> get_state</span> : <code class="type"><a href="Brian.Brian.html#TYPEt">t</a> -> State.GameState.t</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_state br</code> returns the state inside br</p>
+</div>
+</div>
+
+<pre><span id="VALmoves"><span class="keyword">val</span> moves</span> : <code class="type"><a href="Brian.Brian.html#TYPEplayer">player</a> -><br>       State.GameState.t -> (<a href="Game.html#TYPEposition">Game.position</a> * <a href="Game.html#TYPEposition">Game.position</a>) list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">moves color st</code> is the list of valid moves for <code class="code">color</code> in <code class="code">state</code></p>
+</div>
+</div>
+
+<pre><span id="VALrun"><span class="keyword">val</span> run</span> : <code class="type"><a href="Brian.Brian.html#TYPEplayer">player</a> -> int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">run color difficulty</code> runs Brian as <code class="code">color</code> with difficulty set to <code class="code">difficulty</code></p>
+</div>
+</div>
+</body></html>

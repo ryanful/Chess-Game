@@ -1,0 +1,885 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="Game" rel="Chapter" href="Game.html">
+<link title="Command" rel="Chapter" href="Command.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Main" rel="Chapter" href="Main.html">
+<link title="Author" rel="Chapter" href="Author.html">
+<link title="Brian" rel="Chapter" href="Brian.html">
+<link title="Boardtree" rel="Chapter" href="Boardtree.html"><title>Index of values</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Index of values</h1>
+<table>
+<tr><td align="left"><div>A</div></td></tr>
+<tr><td><a href="Boardtree.BoardTree.html#VALadd_depth">add_depth</a> [<a href="Boardtree.BoardTree.html">Boardtree.BoardTree</a>]</td>
+<td><div class="info">
+<p><code class="code">add_depth n</code> is node <code class="code">n</code> with all possible child nodes 
+     (potential game states) added</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Boardtree.Findmove.html#VALadd_depth">add_depth</a> [<a href="Boardtree.Findmove.html">Boardtree.Findmove</a>]</td>
+<td></td></tr>
+<tr><td><a href="Brian.BrianState.html#VALadjust">adjust</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p><code class="code">adjust difficulty br</code> sets the difficulty value in <code class="code">br</code> to <code class="code">difficulty</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Boardtree.Findmove.html#VALall_moves">all_moves</a> [<a href="Boardtree.Findmove.html">Boardtree.Findmove</a>]</td>
+<td><div class="info">
+<p>valid moves of all pieces of a given <code class="code">color</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALall_pieces">all_pieces</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+<tr><td align="left"><div>B</div></td></tr>
+<tr><td><a href="Brian.BrianState.html#VALbad_time">bad_time</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p><code class="code">bad_time</code> prints a string and then exits the game</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALboard_to_list">board_to_list</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td><div class="info">
+<p><code class="code">board_to_list</code> creates a two-dimensional list constructed by appending
+      the folded ranks</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.Square.html#VALbuild">build</a> [<a href="Game.Square.html">Game.Square</a>]</td>
+<td><div class="info">
+<p><code class="code">build pos piece_opt w_thr b_thr</code> creates a new square with position 
+      <code class="code">pos</code>, item <code class="code">piece_opt</code>, and is threatened by int <code class="code">w_thr</code> white pieces and 
+      int <code class="code">b_thr</code> black pieces.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.Piece.html#VALbuild">build</a> [<a href="Game.Piece.html">Game.Piece</a>]</td>
+<td><div class="info">
+<p><code class="code">build name position player</code> is piece <code class="code">p'</code> with name <code class="code">n</code>, position <code class="code">p</code>,
+       and owned by player <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessSquare.html#VALbuild">build</a> [<a href="Game.ChessSquare.html">Game.ChessSquare</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessPiece.html#VALbuild">build</a> [<a href="Game.ChessPiece.html">Game.ChessPiece</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.Square.html#VALbuild_with_piece">build_with_piece</a> [<a href="Game.Square.html">Game.Square</a>]</td>
+<td><div class="info">
+<p><code class="code">build_with_piece pos name player w_thr b_thr</code> creates a new square with 
+      position <code class="code">pos</code>, piece with the same position, name <code class="code">name</code>, and player 
+      <code class="code">player</code>, and is threatened by int <code class="code">w_thr</code> white pieces and int <code class="code">b_thr</code> 
+      black pieces.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessSquare.html#VALbuild_with_piece">build_with_piece</a> [<a href="Game.ChessSquare.html">Game.ChessSquare</a>]</td>
+<td></td></tr>
+<tr><td align="left"><div>C</div></td></tr>
+<tr><td><a href="Brian.BrianState.html#VALcapture">capture</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p><code class="code">capture br</code> returns the move that Brian can make that maximizes
+      the board's minimax value</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALcapture_help">capture_help</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+<tr><td><a href="State.GameState.html#VALcapture_piece">capture_piece</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td><div class="info">
+<p><code class="code">capture_piece st player piece</code> is <code class="code">captured st player</code> if it is player
+      <code class="code">player</code>'s turn or piece <code class="code">piece</code> is None.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.State.html#VALcaptured">captured</a> [<a href="State.State.html">State.State</a>]</td>
+<td><div class="info">
+<p><code class="code">captured st player</code> returns the list of pieces that <code class="code">player</code> has captured
+        in the game represented by <code class="code">st</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALcaptured">captured</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALchange_pos_of_square">change_pos_of_square</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td><div class="info">
+<p><code class="code">change_pos_of_square</code> changes the position of the <code class="code">square</code> in <code class="code">board</code>
+      to <code class="code">pos</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.Square.html#VALchange_position">change_position</a> [<a href="Game.Square.html">Game.Square</a>]</td>
+<td><div class="info">
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessSquare.html#VALchange_position">change_position</a> [<a href="Game.ChessSquare.html">Game.ChessSquare</a>]</td>
+<td></td></tr>
+<tr><td><a href="State.State.html#VALchange_turn">change_turn</a> [<a href="State.State.html">State.State</a>]</td>
+<td><div class="info">
+<p><code class="code">change_turn st</code> changes the turn in the game represented by <code class="code">st</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALchange_turn">change_turn</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.Board.html#VALcheck">check</a> [<a href="Game.Board.html">Game.Board</a>]</td>
+<td><div class="info">
+<p><code class="code">check board player</code> returns <code class="code">true</code> if <code class="code">player</code>'s king is under attack
+       in <code class="code">board</code>, <code class="code">false</code> otherwise</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALcheck">check</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="State.State.html#VALcheck_win">check_win</a> [<a href="State.State.html">State.State</a>]</td>
+<td><div class="info">
+<p><code class="code">check_win s color</code> returns <code class="code">true</code> if <code class="code">color</code> has won in <code class="code">s</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALcheck_win">check_win</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.Board.html#VALcheckmate">checkmate</a> [<a href="Game.Board.html">Game.Board</a>]</td>
+<td><div class="info">
+<p><code class="code">checkmate b player</code> is <code class="code">true</code>if a player's king is in checkmate, 
+      <code class="code">false</code> otherwise.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALcheckmate">checkmate</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="State.State.html#VALcompare">compare</a> [<a href="State.State.html">State.State</a>]</td>
+<td><div class="info">
+<p><code class="code">compare st st'</code> returns <code class="code">-1</code> if the board state in <code class="code">st</code> is considered 
+      weaker than in <code class="code">st'</code>, <code class="code">0</code> if the board states are considered equal, and 
+      <code class="code">1</code> if the board state in <code class="code">st</code> is considered stronger than in <code class="code">st'</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALcompare">compare</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+<tr><td><a href="Brian.BrianState.html#VALcompare_help">compare_help</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p><code class="code">compare_help obj obj'</code> compares the GameStates hidden in <code class="code">obj</code> and <code class="code">obj'</code>
+      with <code class="code">GameState.compare</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Brian.BrianState.html#VALconstructor">constructor</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p><code class="code">constructor color</code> returns a state of Brian initialized to <code class="code">color</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALcontains_piece">contains_piece</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.Board.html#VALcopyboard">copyboard</a> [<a href="Game.Board.html">Game.Board</a>]</td>
+<td><div class="info">
+<p><code class="code">copyboard</code> is a copy of the 2d array representing the chessboard</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALcopyboard">copyboard</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="State.State.html#VALcurr_board">curr_board</a> [<a href="State.State.html">State.State</a>]</td>
+<td><div class="info">
+<p><code class="code">curr_board st</code> returns the current board in the game represented by <code class="code">st</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALcurr_board">curr_board</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+<tr><td><a href="State.State.html#VALcurr_turn">curr_turn</a> [<a href="State.State.html">State.State</a>]</td>
+<td><div class="info">
+<p><code class="code">curr_turn st</code> returns the current turn in the game represented by <code class="code">st</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALcurr_turn">curr_turn</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+<tr><td align="left"><div>E</div></td></tr>
+<tr><td><a href="Game.Board.html#VALempty">empty</a> [<a href="Game.Board.html">Game.Board</a>]</td>
+<td><div class="info">
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALempty">empty</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.Board.html#VALenemies_around_king">enemies_around_king</a> [<a href="Game.Board.html">Game.Board</a>]</td>
+<td><div class="info">
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALenemies_around_king">enemies_around_king</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td align="left"><div>F</div></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALfind_king">find_king</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td align="left"><div>G</div></td></tr>
+<tr><td><a href="Game.Square.html#VALget_bthreat">get_bthreat</a> [<a href="Game.Square.html">Game.Square</a>]</td>
+<td><div class="info">
+<p><code class="code">get_bthreat</code> is the amount of white pieces on the board that can 
+     legally move to this square</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessSquare.html#VALget_bthreat">get_bthreat</a> [<a href="Game.ChessSquare.html">Game.ChessSquare</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.Piece.html#VALget_name">get_name</a> [<a href="Game.Piece.html">Game.Piece</a>]</td>
+<td><div class="info">
+<p><code class="code">get_name piece</code> is the name of <code class="code">piece</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessPiece.html#VALget_name">get_name</a> [<a href="Game.ChessPiece.html">Game.ChessPiece</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.Board.html#VALget_piece">get_piece</a> [<a href="Game.Board.html">Game.Board</a>]</td>
+<td><div class="info">
+<p>the piece at the position specified on the board</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.Square.html#VALget_piece">get_piece</a> [<a href="Game.Square.html">Game.Square</a>]</td>
+<td><div class="info">
+<p><code class="code">get_piece</code> returns the chess piece that is on the square, 
+     and None of the square is empty</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALget_piece">get_piece</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessSquare.html#VALget_piece">get_piece</a> [<a href="Game.ChessSquare.html">Game.ChessSquare</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.Piece.html#VALget_player">get_player</a> [<a href="Game.Piece.html">Game.Piece</a>]</td>
+<td><div class="info">
+<p><code class="code">get_player piece</code> is the player that owns <code class="code">piece</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessPiece.html#VALget_player">get_player</a> [<a href="Game.ChessPiece.html">Game.ChessPiece</a>]</td>
+<td></td></tr>
+<tr><td><a href="Command.html#VALget_position">get_position</a> [<a href="Command.html">Command</a>]</td>
+<td><div class="info">
+<p><code class="code">get_positon lst</code> is the position on the chess board that list <code class="code">lst</code> 
+    represents.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.Square.html#VALget_position">get_position</a> [<a href="Game.Square.html">Game.Square</a>]</td>
+<td><div class="info">
+<p>the coordinates of the square <code class="code">t</code> on the chessboard</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.Piece.html#VALget_position">get_position</a> [<a href="Game.Piece.html">Game.Piece</a>]</td>
+<td><div class="info">
+<p><code class="code">get_position piece</code> is the current location of <code class="code">piece</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessSquare.html#VALget_position">get_position</a> [<a href="Game.ChessSquare.html">Game.ChessSquare</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessPiece.html#VALget_position">get_position</a> [<a href="Game.ChessPiece.html">Game.ChessPiece</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.Board.html#VALget_rank">get_rank</a> [<a href="Game.Board.html">Game.Board</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALget_rank">get_rank</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.Board.html#VALget_square">get_square</a> [<a href="Game.Board.html">Game.Board</a>]</td>
+<td><div class="info">
+<p>the square at the specified position on board</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALget_square">get_square</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Brian.Brian.html#VALget_state">get_state</a> [<a href="Brian.Brian.html">Brian.Brian</a>]</td>
+<td><div class="info">
+<p><code class="code">get_state br</code> returns the state inside br</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Brian.BrianState.html#VALget_state">get_state</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.Square.html#VALget_wthreat">get_wthreat</a> [<a href="Game.Square.html">Game.Square</a>]</td>
+<td><div class="info">
+<p><code class="code">get_wthreat</code> is the amount of white pieces on the board that can 
+      legally move to this square</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessSquare.html#VALget_wthreat">get_wthreat</a> [<a href="Game.ChessSquare.html">Game.ChessSquare</a>]</td>
+<td></td></tr>
+<tr><td align="left"><div>H</div></td></tr>
+<tr><td><a href="Command.html#VALhelper">helper</a> [<a href="Command.html">Command</a>]</td>
+<td><div class="info">
+<p><code class="code">helper lst acc</code> is a list of the first 2 chars in list <code class="code">lst</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Author.html#VALhours_worked">hours_worked</a> [<a href="Author.html">Author</a>]</td>
+<td><div class="info">
+<p><code class="code">hours_worked</code> is the number of hours you worked on this assignment.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>I</div></td></tr>
+<tr><td><a href="Game.Board.html#VALinit">init</a> [<a href="Game.Board.html">Game.Board</a>]</td>
+<td><div class="info">
+<p><code class="code">init</code> is a board with the initial piece configuration of a chess game</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALinit">init</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.Board.html#VALinit4testing">init4testing</a> [<a href="Game.Board.html">Game.Board</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALinit4testing">init4testing</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Brian.BrianState.html#VALinit_new">init_new</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p><code class="code">init_new st br</code> initializes a new state of brian with the color, moves,
+      and difficulty of <code class="code">br</code> but with the gamestate of <code class="code">st</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.State.html#VALinit_state">init_state</a> [<a href="State.State.html">State.State</a>]</td>
+<td><div class="info">
+<p><code class="code">init_state a</code> is the initial state of the game when playing adventure <code class="code">a</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALinit_state">init_state</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+<tr><td><a href="Brian.Brian.html#VALinit_state_black">init_state_black</a> [<a href="Brian.Brian.html">Brian.Brian</a>]</td>
+<td><div class="info">
+<p><code class="code">init_state_black</code> is the initial state of Brian as the black player</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Brian.BrianState.html#VALinit_state_black">init_state_black</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td></td></tr>
+<tr><td><a href="Brian.Brian.html#VALinit_state_white">init_state_white</a> [<a href="Brian.Brian.html">Brian.Brian</a>]</td>
+<td><div class="info">
+<p><code class="code">init_state_white</code> is the initial state of Brian as the white player</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Brian.BrianState.html#VALinit_state_white">init_state_white</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td></td></tr>
+<tr><td><a href="Boardtree.BoardTree.html#VALinit_tree">init_tree</a> [<a href="Boardtree.BoardTree.html">Boardtree.BoardTree</a>]</td>
+<td><div class="info">
+<p><code class="code">init_tree st</code> creates the root of the game tree based 
+     on the gamestate <code class="code">st</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Boardtree.Findmove.html#VALinit_tree">init_tree</a> [<a href="Boardtree.Findmove.html">Boardtree.Findmove</a>]</td>
+<td></td></tr>
+<tr><td><a href="State.State.html#VALis_players_piece">is_players_piece</a> [<a href="State.State.html">State.State</a>]</td>
+<td><div class="info">
+<p><code class="code">is_players_piece st pos</code> returns <code class="code">true</code> if the piece located at <code class="code">pos</code>
+      belongs to the player w</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALis_players_piece">is_players_piece</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.Piece.html#VALis_players_piece">is_players_piece</a> [<a href="Game.Piece.html">Game.Piece</a>]</td>
+<td><div class="info">
+<p><code class="code">is_player_piece player p</code> is <code class="code">true</code> if the player associated with piece <code class="code">p</code>
+      matches <code class="code">player</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessPiece.html#VALis_players_piece">is_players_piece</a> [<a href="Game.ChessPiece.html">Game.ChessPiece</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALiterate">iterate</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td><div class="info">
+<p>a list of positions in a direction specified by f 
+     until a position is not valid</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>K</div></td></tr>
+<tr><td><a href="Game.Board.html#VALking_is_safe">king_is_safe</a> [<a href="Game.Board.html">Game.Board</a>]</td>
+<td><div class="info">
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALking_is_safe">king_is_safe</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALking_threathened">king_threathened</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td align="left"><div>L</div></td></tr>
+<tr><td><a href="Game.Board.html#VALlist_threatened">list_threatened</a> [<a href="Game.Board.html">Game.Board</a>]</td>
+<td><div class="info">
+<p>All validmoves for player.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALlist_threatened">list_threatened</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td><div class="info">
+<p>all squares threatened by player</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>M</div></td></tr>
+<tr><td><a href="Boardtree.BoardTree.html#VALminimax">minimax</a> [<a href="Boardtree.BoardTree.html">Boardtree.BoardTree</a>]</td>
+<td><div class="info">
+<p><code class="code">minimax st</code> is the minimax value for the board state <code class="code">st</code> 
+     based on the material value of pieces left on the board for each player</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Boardtree.Findmove.html#VALminimax">minimax</a> [<a href="Boardtree.Findmove.html">Boardtree.Findmove</a>]</td>
+<td></td></tr>
+<tr><td><a href="State.State.html#VALminimax">minimax</a> [<a href="State.State.html">State.State</a>]</td>
+<td><div class="info">
+<p><code class="code">minimax st</code> returns the minimax value of the current board state from the
+        perspective of the current player</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALminimax">minimax</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+<tr><td><a href="Brian.BrianState.html#VALmove">move</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p>Returns a new object of type br with new state after moving with
+      respect to <code class="code">pair</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.State.html#VALmove">move</a> [<a href="State.State.html">State.State</a>]</td>
+<td><div class="info">
+<p><code class="code">move st start finish</code> moves the piece located at <code class="code">start</code> to the position
+      <code class="code">finish</code> and then changes the turn in <code class="code">st</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALmove">move</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.Board.html#VALmove">move</a> [<a href="Game.Board.html">Game.Board</a>]</td>
+<td><div class="info">
+<p>a new board with piece at start position moved to end position.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.Piece.html#VALmove">move</a> [<a href="Game.Piece.html">Game.Piece</a>]</td>
+<td><div class="info">
+<p><code class="code">move p pos</code> is piece <code class="code">p'</code>, which is piece <code class="code">p</code> with its position changed 
+      to position <code class="code">pos</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALmove">move</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessPiece.html#VALmove">move</a> [<a href="Game.ChessPiece.html">Game.ChessPiece</a>]</td>
+<td></td></tr>
+<tr><td><a href="Brian.BrianState.html#VALmove_help">move_help</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p>Wrapper for GameState.move</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.State.html#VALmove_options">move_options</a> [<a href="State.State.html">State.State</a>]</td>
+<td><div class="info">
+<p><code class="code">move_options state pos</code> provides the list of valid moves for a piece at 
+      position <code class="code">pos</code> in the board store din <code class="code">state</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALmove_options">move_options</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+<tr><td><a href="Brian.Brian.html#VALmoves">moves</a> [<a href="Brian.Brian.html">Brian.Brian</a>]</td>
+<td><div class="info">
+<p><code class="code">moves color st</code> is the list of valid moves for <code class="code">color</code> in <code class="code">state</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Brian.BrianState.html#VALmoves">moves</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td></td></tr>
+<tr><td><a href="Brian.BrianState.html#VALmoves_help">moves_help</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p><code class="code">moves_help st accu pieces</code> folds the list of pieces using <code class="code">single_piece</code>
+      as a helper</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>N</div></td></tr>
+<tr><td><a href="Game.ChessPiece.html#VALname_to_string">name_to_string</a> [<a href="Game.ChessPiece.html">Game.ChessPiece</a>]</td>
+<td><div class="info">
+<p><code class="code">name_to_string</code> returns the string representation of
+      the inputted name</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.Board.html#VALnearby_knight_check">nearby_knight_check</a> [<a href="Game.Board.html">Game.Board</a>]</td>
+<td><div class="info">
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALnearby_knight_check">nearby_knight_check</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Boardtree.BoardTree.html#VALnext_move">next_move</a> [<a href="Boardtree.BoardTree.html">Boardtree.BoardTree</a>]</td>
+<td><div class="info">
+<p><code class="code">next_move st</code> is the most profitable move to make based 
+     on minimax values of all potential moves</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Boardtree.Findmove.html#VALnext_move">next_move</a> [<a href="Boardtree.Findmove.html">Boardtree.Findmove</a>]</td>
+<td></td></tr>
+<tr><td align="left"><div>P</div></td></tr>
+<tr><td><a href="Command.html#VALparse">parse</a> [<a href="Command.html">Command</a>]</td>
+<td><div class="info">
+<p><code class="code">parse str</code> parses a player's input into a <code class="code">command</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Brian.BrianState.html#VALpick_move">pick_move</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p><code class="code">pick_move br</code> calls a helper function to return a position based on
+      <code class="code">br</code>'s difficulty value</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALpiece_info">piece_info</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td><div class="info">
+<p><code class="code">piece_info piece</code> returns the string representation of <code class="code">piece</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.Board.html#VALpiece_list">piece_list</a> [<a href="Game.Board.html">Game.Board</a>]</td>
+<td><div class="info">
+<p>the list of all pieces for a given player on the board</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALpiece_list">piece_list</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Main.html#VALplay_game">play_game</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALplayer_prompt">player_prompt</a> [<a href="Main.html">Main</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.Piece.html#VALplayer_to_string">player_to_string</a> [<a href="Game.Piece.html">Game.Piece</a>]</td>
+<td><div class="info">
+<p><code class="code">player_to_string pl</code> is the string representation of player <code class="code">pl</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessPiece.html#VALplayer_to_string">player_to_string</a> [<a href="Game.ChessPiece.html">Game.ChessPiece</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALpos_compare">pos_compare</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Brian.BrianState.html#VALpos_to_rankfile">pos_to_rankfile</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p>Returns a string visualisation of teh positions in <code class="code">lst</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALpos_to_rankfile">pos_to_rankfile</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+</div>
+</td></tr>
+<tr><td><a href="Game.html#VALposition_to_string">position_to_string</a> [<a href="Game.html">Game</a>]</td>
+<td><div class="info">
+<p><code class="code">position_to_string pos</code> returns a string representation of <code class="code">pos</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Brian.BrianState.html#VALprint_list">print_list</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p><code class="code">print_list</code> prints the list inputted to it</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALprint_list">print_list</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+</div>
+</td></tr>
+<tr><td align="left"><div>R</div></td></tr>
+<tr><td><a href="Brian.BrianState.html#VALrand_move">rand_move</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p><code class="code">pick_move moves</code> picks a random element from <code class="code">moves</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALrank1t">rank1t</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALrank2t">rank2t</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALrank3t">rank3t</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALrank4t">rank4t</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALrank5t">rank5t</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALrank6t">rank6t</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALrank7t">rank7t</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALrank8t">rank8t</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALrank_1">rank_1</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td><div class="info">
+<p>Initialization of Rank 1</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALrank_2">rank_2</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td><div class="info">
+<p>Initialization of Rank 2</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALrank_3">rank_3</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td><div class="info">
+<p>Initialization of Rank 3</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALrank_4">rank_4</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td><div class="info">
+<p>Initialization of Rank 4</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALrank_5">rank_5</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td><div class="info">
+<p>Initialization of Rank 5</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALrank_6">rank_6</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td><div class="info">
+<p>Initialization of Rank 6</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALrank_7">rank_7</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td><div class="info">
+<p>Initialization of Rank 7</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALrank_8">rank_8</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td><div class="info">
+<p>Initialization of Rank 8</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALrank_to_list">rank_to_list</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td><div class="info">
+<p><code class="code">rank_to_list rank</code> folds <code class="code">rank</code> from an array into a list</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALrank_to_string">rank_to_string</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td><div class="info">
+<p><code class="code">rank_to_string rank</code> returns the string representation of <code class="code">rank</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.State.html#VALremaining">remaining</a> [<a href="State.State.html">State.State</a>]</td>
+<td><div class="info">
+<p><code class="code">renaining st color</code> is the list of all remaining pieces for the 
+      player <code class="code">color</code> on the chess board</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALremaining">remaining</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+<tr><td><a href="State.GameState.html#VALremaining_help">remaining_help</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+<tr><td><a href="Command.html#VALremove_empty">remove_empty</a> [<a href="Command.html">Command</a>]</td>
+<td><div class="info">
+<p><code class="code">remove_empty lst</code> is string list <code class="code">lst</code> without any empty strings.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.Square.html#VALremove_piece">remove_piece</a> [<a href="Game.Square.html">Game.Square</a>]</td>
+<td><div class="info">
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessSquare.html#VALremove_piece">remove_piece</a> [<a href="Game.ChessSquare.html">Game.ChessSquare</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALremove_piece_from_square">remove_piece_from_square</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td><div class="info">
+<p><code class="code">remove_piece_from_square baord pos square</code> removes the piece located at 
+      <code class="code">pos</code> on <code class="code">square</code> in <code class="code">board</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Brian.Brian.html#VALrun">run</a> [<a href="Brian.Brian.html">Brian.Brian</a>]</td>
+<td><div class="info">
+<p><code class="code">run color difficulty</code> runs Brian as <code class="code">color</code> with difficulty set to <code class="code">difficulty</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Brian.BrianState.html#VALrun">run</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p><code class="code">run color</code> runs Brian as player <code class="code">color</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALrun">run</a> [<a href="Main.html">Main</a>]</td>
+<td></td></tr>
+<tr><td><a href="Brian.BrianState.html#VALrun_help">run_help</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p><code class="code">run_help color br</code> makes Brian's move if it's his turn else it prompts
+      the human player to select a piece for moving</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>S</div></td></tr>
+<tr><td><a href="Brian.BrianState.html#VALscore">score</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p><code class="code">score item</code> returns the score value of <code class="code">item</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.State.html#VALscore">score</a> [<a href="State.State.html">State.State</a>]</td>
+<td><div class="info">
+<p><code class="code">score st player</code> returns the total score of all the pieces that <code class="code">player</code>
+        has captured in the game represented by <code class="code">st</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALscore">score</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+<tr><td><a href="State.GameState.html#VALscore_from_piece">score_from_piece</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td><div class="info">
+<p><code class="code">score_from_piece item</code> returns the corresponding score value based on
+      which piece <code class="code">item</code> is</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALscore_helper">score_helper</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td><div class="info">
+<p><code class="code">score_helper acc</code> returns the sum of the scores of the pieces passed in
+      added to <code class="code">acc</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Main.html#VALselect_run">select_run</a> [<a href="Main.html">Main</a>]</td>
+<td><div class="info">
+</div>
+</td></tr>
+<tr><td><a href="Brian.BrianState.html#VALselect_run_help">select_run_help</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p><code class="code">select_run_help color br pos</code> prompt the player to select a position for
+      moving after the player has selected <code class="code">pos</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Brian.BrianState.html#VALsingle_piece">single_piece</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p><code class="code">single_piece piece st</code> returns the list of <code class="code">position</code> pairs that can be
+      selected and moved with <code class="code">piece</code> in <code class="code">st</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALsquare_to_string">square_to_string</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td><div class="info">
+<p><code class="code">square_to_string</code> returns the string representation of <code class="code">square</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.State.html#VALstate_copy">state_copy</a> [<a href="State.State.html">State.State</a>]</td>
+<td><div class="info">
+<p><code class="code">state_copy st</code> returns a copy of <code class="code">st</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALstate_copy">state_copy</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+<tr><td><a href="State.State.html#VALstate_from_board">state_from_board</a> [<a href="State.State.html">State.State</a>]</td>
+<td><div class="info">
+<p><code class="code">state_from_board st board</code> changes the board in <code class="code">st</code> to <code class="code">board</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALstate_from_board">state_from_board</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+<tr><td align="left"><div>T</div></td></tr>
+<tr><td><a href="Game.Piece.html#VALto_string">to_string</a> [<a href="Game.Piece.html">Game.Piece</a>]</td>
+<td><div class="info">
+<p><code class="code">to_string p</code> is the string representation of piece <code class="code">p</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessPiece.html#VALto_string">to_string</a> [<a href="Game.ChessPiece.html">Game.ChessPiece</a>]</td>
+<td></td></tr>
+<tr><td><a href="Boardtree.Findmove.html#VALtree_string">tree_string</a> [<a href="Boardtree.Findmove.html">Boardtree.Findmove</a>]</td>
+<td><div class="info">
+<p><code class="code">tree_string tr</code> is a string representation of the game tree datatype</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Boardtree.Findmove.html#VALtup_string">tup_string</a> [<a href="Boardtree.Findmove.html">Boardtree.Findmove</a>]</td>
+<td><div class="info">
+<p><code class="code">tup_string t</code> is a string representation of a tuple of ints</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>U</div></td></tr>
+<tr><td><a href="Brian.BrianState.html#VALupdate">update</a> [<a href="Brian.BrianState.html">Brian.BrianState</a>]</td>
+<td><div class="info">
+<p><code class="code">update br</code> updates the list of valid moves based on the state in brian</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>V</div></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALvalid_bishop">valid_bishop</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALvalid_king">valid_king</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALvalid_knight">valid_knight</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td><div class="info">
+<p>list of valid moves for a knight of color c at position (x,y)</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Game.Board.html#VALvalid_moves">valid_moves</a> [<a href="Game.Board.html">Game.Board</a>]</td>
+<td><div class="info">
+</div>
+</td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALvalid_moves">valid_moves</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALvalid_pawn">valid_pawn</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALvalid_rook">valid_rook</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td></td></tr>
+<tr><td><a href="Game.ChessBoard.html#VALvalid_square">valid_square</a> [<a href="Game.ChessBoard.html">Game.ChessBoard</a>]</td>
+<td><div class="info">
+<p>true if square at <code class="code">finish</code> has no piece or has a piece of the same color as 
+     <code class="code">p</code> and false otherwise</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.State.html#VALvisualize">visualize</a> [<a href="State.State.html">State.State</a>]</td>
+<td><div class="info">
+<p><code class="code">visualize st</code> returns the string representation of a board state
+        formatted for printing to the console</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.GameState.html#VALvisualize">visualize</a> [<a href="State.GameState.html">State.GameState</a>]</td>
+<td></td></tr>
+</table>
+</body>
+</html>
